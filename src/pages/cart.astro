@@ -1,0 +1,13 @@
+---
+import { Heading } from '../components/Heading';
+import Layout from '../layouts/Layout.astro';
+import { CartList } from '../components/CartList';
+---
+
+<Layout title='Cart Items' description='Cart Items'>
+  <div class='max-w-[1800px] mx-auto'>
+    <Heading text='Cart Items' variant='h1' textAlign='center' client:load />
+
+    <CartList client:load />
+  </div>
+</Layout>

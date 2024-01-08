@@ -1,0 +1,12 @@
+---
+import { AdminManageProducts } from '../components/AdminManageProducts';
+import { Heading } from '../components/Heading';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Manage Products' description='Manage products'>
+  <div class='max-w-[1800px] mx-auto'>
+    <Heading text='Manage Products' variant='h1' textAlign='center' client:load />
+    <AdminManageProducts client:load />
+  </div>
+</Layout>

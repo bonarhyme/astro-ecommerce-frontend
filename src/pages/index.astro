@@ -1,0 +1,12 @@
+---
+import { ProductList } from '../components/ProductList';
+import { ShowCase } from '../components/Showcase';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Astro Ecommerce' description='We sell high quality stuff'>
+  <div class='max-w-[1800px] mx-auto'>
+    <ShowCase client:load />
+    <ProductList client:load />
+  </div>
+</Layout>

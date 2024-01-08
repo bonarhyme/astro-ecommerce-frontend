@@ -1,0 +1,13 @@
+---
+import { Heading } from '../components/Heading';
+import Layout from '../layouts/Layout.astro';
+import { Profile } from '../components/Profile';
+---
+
+<Layout title='User Profile' description='User Profile'>
+  <div class='max-w-[1800px] mx-auto'>
+    <Heading text='User Profile' variant='h1' textAlign='center' client:load />
+
+    <Profile client:load />
+  </div>
+</Layout>

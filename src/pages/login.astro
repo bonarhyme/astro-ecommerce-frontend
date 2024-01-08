@@ -1,0 +1,12 @@
+---
+import { Heading } from '../components/Heading';
+import { LoginForm } from '../components/LoginForm';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Astro Login' description='Login an account'>
+  <div class='max-w-[1800px] mx-auto'>
+    <Heading text='Login' variant='h1' textAlign='center' />
+    <LoginForm client:load />
+  </div>
+</Layout>

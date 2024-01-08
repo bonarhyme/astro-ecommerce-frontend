@@ -1,0 +1,12 @@
+---
+import { Heading } from '../components/Heading';
+import Layout from '../layouts/Layout.astro';
+import { RegisterForm } from '../components/RegisterForm';
+---
+
+<Layout title='Astro Register' description='Register an account'>
+  <div class='max-w-[1800px] mx-auto'>
+    <Heading text='Register' variant='h1' textAlign='center' />
+    <RegisterForm client:load />
+  </div>
+</Layout>

@@ -1,0 +1,12 @@
+---
+import { AdminManageUsers } from '../components/AdminManageUsers';
+import { Heading } from '../components/Heading';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Manage Users' description='Manage Users'>
+  <div class='max-w-[1800px] mx-auto'>
+    <Heading text='Manage Users' variant='h1' textAlign='center' client:load />
+    <AdminManageUsers client:load />
+  </div>
+</Layout>

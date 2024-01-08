@@ -1,0 +1,12 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { OrderDetails } from '../../components/OrderDetails';
+
+const id = Astro.url?.pathname?.split('/')[2];
+---
+
+<Layout title='Manage Order' description='Manage Order'>
+  <div class='max-w-[1800px] mx-auto px-4'>
+    <OrderDetails client:load id={id || ''} />
+  </div>
+</Layout>

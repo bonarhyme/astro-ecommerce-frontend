@@ -1,0 +1,15 @@
+---
+import { Heading } from '../components/Heading';
+import Layout from '../layouts/Layout.astro';
+import { CheckoutCart } from '../components/CheckoutCart';
+
+const segment = Astro.url?.search?.split('=')[1] || 'shipping';
+---
+
+<Layout title='Checkout ' description='Checkout'>
+  <div class='max-w-[1800px] mx-auto'>
+    <Heading text='Checkout' variant='h1' textAlign='center' client:load />
+
+    <CheckoutCart segment={segment} client:load />
+  </div>
+</Layout>
